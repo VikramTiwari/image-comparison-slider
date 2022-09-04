@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image comparison slider</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h4>Select images</h4>
+		<p>
+			L: <input id="file1" type="file" accept="image/*" /> R:
+			<input id="file2" type="file" accept="image/*" />
+		</p>
+		<div class="comparison-container">
+			<img
+				id="image2"
+				src="./assets/left.jpg"
+				alt="image on the right"
+			/>
+			<div class="caption">And I am the <strong>after</strong> image.</div>
+
+			<div class="comparison-lhs">
+				<img
+					id="image1"
+					src="./assets/right.jpg"
+					alt="image on the left"
+				/>
+				<div class="caption">I am the <strong>before</strong> image.</div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
